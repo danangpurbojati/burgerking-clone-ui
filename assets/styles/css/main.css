@@ -9,6 +9,20 @@ body {
   background-color: #f9f4f2;
 }
 
+.button {
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ed7801;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 header {
   z-index: 9999999;
   background-color: #2d2d2d;
@@ -424,17 +438,6 @@ footer .footer-privacy .privacy:nth-child(2) {
   font-size: 24px;
 }
 
-.menu-page-section .card-detail .card-content .button {
-  border-radius: 8px;
-  border: none;
-  width: 100%;
-  padding: 8px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #ed7801;
-  color: #fff;
-}
-
 .news-page-section {
   min-height: 100vh;
   background-image: url("../../images/background.jpg");
@@ -490,5 +493,101 @@ footer .footer-privacy .privacy:nth-child(2) {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.login-section {
+  min-height: 100vh;
+  padding: 48px 0;
+  color: #404040;
+}
+
+.login-section .auth-card {
+  max-width: 460px;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 15px -4px #6b6b6b;
+          box-shadow: 2px 2px 15px -4px #6b6b6b;
+}
+
+.login-section .auth-card hr {
+  border-top: 1px solid #e0e0e0;
+}
+
+.login-section .auth-card .card-content {
+  padding: 48px 24px;
+}
+
+.login-section .auth-card .card-content .auth-title {
+  text-align: center;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: #8b542f;
+  font-size: 32px;
+}
+
+.login-section .auth-card .card-content .auth-text {
+  text-align: center;
+  color: #8b542f;
+}
+
+.login-section .auth-card .card-content .input-form {
+  display: block;
+  width: 100%;
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 1px solid #e0e0e0;
+}
+
+.login-section .auth-card .card-content .input-form::-webkit-input-placeholder {
+  color: #e0e0e0;
+}
+
+.login-section .auth-card .card-content .input-form:-ms-input-placeholder {
+  color: #e0e0e0;
+}
+
+.login-section .auth-card .card-content .input-form::-ms-input-placeholder {
+  color: #e0e0e0;
+}
+
+.login-section .auth-card .card-content .input-form::placeholder {
+  color: #e0e0e0;
+}
+
+.login-section .auth-card .card-content .input-form:focus {
+  outline: none;
+}
+
+.login-section .auth-card .card-content .link {
+  text-decoration: none;
+  margin-top: 16px;
+  display: block;
+  color: #ed7801;
+  font-weight: bold;
+}
+
+.login-section .auth-card .card-content .auth-sub-title {
+  color: #8b542f;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.login-section .auth-card .card-content .auth-sub-text {
+  color: #8b542f;
+}
+
+.login-section .auth-card .auth-image {
+  text-align: center;
+}
+
+.login-section .auth-card .auth-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -4px;
 }
 /*# sourceMappingURL=main.css.map */
