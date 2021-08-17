@@ -6,6 +6,7 @@ body{
 }
 
 .button{
+    display: block;
     text-decoration: none;
     text-align: center;
     border-radius: 6px;
@@ -17,6 +18,12 @@ body{
     background-color: $mainOrange;
     color: #fff;
     text-transform: uppercase;
+    margin: 16px 0;
+}
+
+.button-white{
+    background-color: #fff;
+    color: $mainOrange;
 }
 
 header {
@@ -257,6 +264,17 @@ footer{
     background-attachment: fixed;
     padding: 48px 0;
 
+    .account-order-title{
+        margin-bottom: 32px;
+        font-weight: normal;
+        color: $brownText;
+        text-transform: capitalize;
+        
+        @media screen and (max-width: 992px) {
+            text-align: center;
+        }
+    }
+
     .search-form{
         border-radius: 8px;
         margin-bottom: 32px;
@@ -297,9 +315,18 @@ footer{
 
     .category-wrapper{
         list-style: none;
+        width: 100%;
 
         .category-list{
             margin-bottom: 8px;
+            width: 100%;
+
+            @media screen and (max-width: 992px) {
+                &:nth-child(2){
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }               
         }
 
         .category-link{
@@ -328,6 +355,11 @@ footer{
         border-radius: 10px;
         padding: 20px;
         box-shadow: 2px 2px 15px -4px #6b6b6b;
+
+        .empty-order{
+            // border: 1px solid red;
+            min-height: 400px;
+        }
 
         .card-image{
             margin-bottom: 16px;
@@ -405,6 +437,42 @@ footer{
                     font-weight: bold;
                     background-color: #fff;
                     font-size: 24px;
+                }
+            }
+
+            .account-form{
+                padding: 24px;
+                .field{
+                    margin-bottom: 18px;
+                }
+
+                .label-form{
+                    width: 150px;
+                    color: $greyText2;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    // border: 1px solid red;
+                }
+
+                .input-form{
+                    border: 1px solid $mainborder;
+                    // width: 100%;
+                    border-radius: 6px;
+                    flex-grow: 1;
+                    padding: 8px 16px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+
+                .form-checkbox{
+                    margin-right: 16px;
+                    border: 1px solid $mainborder;
+                    
+                }
+
+                .form-option{
+                    margin-right: 16px;
                 }
             }
         }

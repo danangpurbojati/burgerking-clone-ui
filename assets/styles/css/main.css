@@ -10,6 +10,7 @@ body {
 }
 
 .button {
+  display: block;
   text-decoration: none;
   text-align: center;
   border-radius: 6px;
@@ -21,6 +22,12 @@ body {
   background-color: #ed7801;
   color: #fff;
   text-transform: uppercase;
+  margin: 16px 0;
+}
+
+.button-white {
+  background-color: #fff;
+  color: #ed7801;
 }
 
 header {
@@ -264,6 +271,19 @@ footer .footer-privacy .privacy:nth-child(2) {
   padding: 48px 0;
 }
 
+.menu-page-section .account-order-title {
+  margin-bottom: 32px;
+  font-weight: normal;
+  color: #8b542f;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 992px) {
+  .menu-page-section .account-order-title {
+    text-align: center;
+  }
+}
+
 .menu-page-section .search-form {
   border-radius: 8px;
   margin-bottom: 32px;
@@ -321,10 +341,19 @@ footer .footer-privacy .privacy:nth-child(2) {
 
 .menu-page-section .category-wrapper {
   list-style: none;
+  width: 100%;
 }
 
 .menu-page-section .category-wrapper .category-list {
   margin-bottom: 8px;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .menu-page-section .category-wrapper .category-list:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .menu-page-section .category-wrapper .category-link {
@@ -353,6 +382,10 @@ footer .footer-privacy .privacy:nth-child(2) {
   padding: 20px;
   -webkit-box-shadow: 2px 2px 15px -4px #6b6b6b;
           box-shadow: 2px 2px 15px -4px #6b6b6b;
+}
+
+.menu-page-section .card .empty-order {
+  min-height: 400px;
 }
 
 .menu-page-section .card .card-image {
@@ -436,6 +469,43 @@ footer .footer-privacy .privacy:nth-child(2) {
   font-weight: bold;
   background-color: #fff;
   font-size: 24px;
+}
+
+.menu-page-section .card-detail .card-content .account-form {
+  padding: 24px;
+}
+
+.menu-page-section .card-detail .card-content .account-form .field {
+  margin-bottom: 18px;
+}
+
+.menu-page-section .card-detail .card-content .account-form .label-form {
+  width: 150px;
+  color: #b7b7b7;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.menu-page-section .card-detail .card-content .account-form .input-form {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 8px 16px;
+}
+
+.menu-page-section .card-detail .card-content .account-form .input-form:focus {
+  outline: none;
+}
+
+.menu-page-section .card-detail .card-content .account-form .form-checkbox {
+  margin-right: 16px;
+  border: 1px solid #e0e0e0;
+}
+
+.menu-page-section .card-detail .card-content .account-form .form-option {
+  margin-right: 16px;
 }
 
 .news-page-section {
